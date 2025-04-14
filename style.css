@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav-bar {
+    height: 45px;
+    background-color: rgb(228, 228, 228);
+    color: rgb(66, 64, 64);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-bar2 {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0; /* Adjust padding for better spacing */
+    font-size: 16px;
+    color: #2c2929; /* Dark text color */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-bar3 {
+    height: 45px;
+    background-color: rgb(80, 73, 73);
+    color: rgb(248, 248, 248);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo {
+    color: rgb(30, 30, 49);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Ensure links match the text color */
+    margin-right: 20px; /* Adjust spacing */
+}
+
+a:hover {
+    color: #555; /* Add hover effect for better interactivity */
+}
+
+.nav-bar a:last-child {
+    margin-right: 0; /* Remove margin for the last link */
+}
+
+.hero-section {
+    background-image: url('WK45_24-Homepage-HeroBanner-GymShark_OUR_BEST_FOR_YOUR_BEST-ALLREGION-DK.jpg');
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    position: relative;
+    padding: 20px; /* Optional: Adds inner spacing */
+}
+
+.hero-panel {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px; /* Space between hero-panel and hero-sms */
+    color: white;
+    z-index: 1;
+    text-align: center; /* Centers the text */
+}
+
+.hero-sms {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; /* Adjusted for better readability */
+    color: white; /* Semi-transparent white */
+    text-align: center; /* Centers text within the container */
+    z-index: 1;
+    max-width: 80%; /* Optional: Limit width for better readability */
+}
+
+button {
+    display: inline-block;
+    padding: 13px 40px;
+    background: white;
+    margin-top: 20px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all 0.50s ease;
+    cursor: pointer;
+    text-align: center; /* Centers text inside the button */
+}
+
+
+button:hover {
+    background: black;
+    color: white;
+    border-color: white;
+    
+}
+
+a:focus, button:focus {
+    outline: 2px solid #555;
+    outline-offset: 4px;
+}
+
+
+.shop-section {
+    margin: 20px;
+    text-align: center;
+}
+
+.shop-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.shop-section a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.product-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.product-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.box {
+    min-width: 180px;
+    flex-shrink: 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.box-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.box-text {
+    margin-top: 10px;
+}
+
+.box-text i {
+    color: #ff6b6b;
+    cursor: pointer;
+}
+
+.box-text p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.box-text h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.banner-item {
+    flex: 1;
+    max-width: 350px; /* Controls max size */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.banner-item:hover {
+    transform: scale(1.05); /* Slightly enlarges the banner on hover */
+}
+
+.banner-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%; /* Ensures the image fills the container */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    display: block;
+}
+
+.banner-item h2 {
+    position: absolute;
+    bottom: 80px; /* Adjusted for proper positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 26px; /* Increased for better visibility */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner-item button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.banner-item button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: translateX(-50%) scale(1.1); /* Enlarges button on hover */
+}
+
+
+.image-banner {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust the height as needed */
+    background-image: url('WK44_24-Homepage-HeroBanner-LEVEL_UP_IN_LAYERS-ALLREGION-DK.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-banner .content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the image */
+    padding: 20px;
+    max-width: 80%; /* Optional: adjusts content width */
+   
+}
+
+.image-banner h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: adds shadow to the text */
+}
+
+.image-banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.image-banner button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.image-banner button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.image-banner2 {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust the height as needed */
+    background-image: url('WK45_24-Homepage-HeroBanner-GIFTING-ALLREGION-DK.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-banner2 .content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the image */
+    padding: 20px;
+    max-width: 80%; /* Optional: adjusts content width */
+   
+}
+
+.image-banner2 h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: adds shadow to the text */
+}
+
+.image-banner2 p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.image-banner2 button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.image-banner2 button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.download{
+    height: 190px;
+    background-color: #000;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+
+footer {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color for better contrast */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.foot-panel1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.foot-panel2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align the ul sections */
+    margin-bottom: 30px;
+}
+
+.foot-panel2 ul {
+    width: 300px; /* Adjust width to make links a bit larger */
+    padding: 0;
+    text-align: center; /* Center-align the links */
+    margin: 10px;
+}
+
+.foot-panel2 p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center; /* Center-align the section headings */
+}
+
+.foot-panel2 li {
+    list-style-type: none;
+}
+
+.foot-panel2 a {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem; /* Larger font size */
+    display: block;
+    margin-bottom: 12px; /* Add some space between links */
+    transition: color 0.3s ease;
+}
+.foot-panel2 a:hover {
+    color: black;  /* Color change on hover */
+}
+
+footer {
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+.foot-panel4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.pages a {
+    margin-right: 25px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.pages a:hover {
+    color: black;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: #777;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.workout-description h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.workout-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.copyright-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.read-more-btn {
+    background-color:#D3D3D3;
+    border: none;
+    padding: 10px 20px;
+    color:black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.read-more-btn:hover {
+    background-color:grey;
+}
+
+/* Style for the links container */
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 2px solid #ccc;  /* Line on top of the links section */
+    margin-top: 20px;
+}
+
+/* Style for each link section (ul) */
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 30%;  /* Set a fixed width for each section */
+}
+
+
+/* Style for each link item */
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Style for links */
+.links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    
+}
+
+.links a:hover {
+    color: black;  /* Color change on hover */
+}
+
+
+/* Footer Content Container */
+.footer-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack logos and social icons vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Logos Section */
+.logos {
+    display: flex;
+    justify-content: center; /* Center logos */
+    gap: 15px; /* Space between logos */
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center icons */
+    gap: 20px; /* Space between icons */
+}
+
+/* Social Media Icon Style */
+.social-icons i {
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Hover effect for social media icons */
+.social-icons i:hover {
+    color: #ff9900; /* Change color on hover */
+}
+
+.copyright2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 40px 20px;
+    }
+    .hero-panel {
+        font-size: 24px;
+    }
+    .hero-sms {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
